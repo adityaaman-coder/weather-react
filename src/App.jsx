@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 import { WFURL , WLURL } from './Url';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const [city, setCity] = useState('');
@@ -42,7 +40,7 @@ function App() {
       />
       
 
-      <button onClick={fetchWeather}><FontAwesomeIcon icon={faMagnifyingGlass} />Get Weather</button>
+      <button onClick={fetchWeather}>Get Weather</button>
                                                             
 {
     weather.temp
